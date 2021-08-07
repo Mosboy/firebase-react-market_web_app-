@@ -1,0 +1,60 @@
+.fish>*{
+	margin:0 2px;
+	padding:0;
+}
+.fish{
+	box-sizing: border-box;
+	width:80%;
+	margin:0 auto;
+	list-style:none;
+	border-bottom:3px inset silver;
+	border-top:3px inset silver;
+	margin-bottom:1px;
+	display:flex;
+}
+.fish:last-child{
+	border-bottom:none;
+}
+.fish>img{
+	width:50%;
+	height: 50%;
+	flex-basis:50%;
+}
+.fish>.name-desc-but{
+	height: 50%;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction: column;
+	flex-wrap:column;
+	align-items: space-around;
+}
+.fish>.name-desc-but>*{
+	padding:0;
+	margin:0;
+}
+.fish>.name-desc-but>.fish-name{
+font-size:50%;
+font-weight: bolder;
+position: relative;
+font-family: monospace;
+font-size:80%;
+}
+.fish>.name-desc-but>.fish-name>.price{
+	color:green;
+    display: inline-block;
+    margin-left:5px;
+}
+.fish>.name-desc-but>.desc{
+font-size:80%;
+font-weight: bolder;
+font-family: cursive;
+word-wrap:break-word;
+}
+.fish>.name-desc-but>button{
+	font-size: 10px;
+	height:15px;
+}
+.fish button[disabled]{
+	color:red;background:white;border-color:red;transform:rotate(-10deg) translateX(0%) translateY(-50%);width:85%;
+}

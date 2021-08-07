@@ -1,0 +1,168 @@
+/*#root>p{
+  background:black;
+  color:white;
+  padding:0px;
+  width:5%;
+}
+#root .store-picker{
+  border:2px solid ;
+  width:50%;
+  margin:auto;
+}
+#root .store-picker>*{
+display:block;
+width:80%;
+margin:10px auto;
+text-align:center;
+}
+#root .store-picker>button:hover{
+background-color:black;
+color:yellow;
+font-family:monospace;
+}*/
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.catch-of-the-day {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 2px solid;
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+}
+.menu,
+.Inventory,
+.order {
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	margin: 2px;
+	flex: 1;
+}
+.menu > * {
+	margin: 0;
+	padding: 0;
+}
+.menu h1 > .of,
+.menu h1 > .the {
+	font-size: 10px;
+	padding: 3px;
+	position: relative;
+	top: -5px;
+	color: goldenrod;
+}
+.menu .tagline > span {
+	color: silver;
+	width: 100px;
+	margin: 0;
+	font-size: 15px;
+	text-align: justify;
+	position: relative;
+	top: -30px;
+	left: 10px;
+}
+.menu .userInfo{
+	margin-top:0px;
+	margin:auto;
+	position: relative;
+	bottom:20px;
+display: flex;}
+.menu .userInfo>img{border-radius: 50%;margin-left:10px; width:25px; height: 25px;}
+.menu .userInfo>strong{align-self: center;margin-left:3px; font-family: monospace;background:black;color:silver;border-radius: 3px;padding:2px;}
+.Inventory{
+	font-family: cursive;
+}
+.Inventory .editFish>input, .Inventory .editFish>textarea{
+	font-family: inherit;
+	border:none;
+	background:rgba(0,0,0,0.5);
+	color:rgba(273,273,273,0.5);
+}
+.Inventory .removeFish{
+	background-color:orange;
+	border:none;
+	background:darkslategrey;
+	color:gainsboro;
+}
+.Inventory > .loadSampleFishesButton {
+	background-color: black;
+	color: grey;
+	border: none;
+	padding: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 3px;
+	font-family: monospace;
+	width: 100%;
+}
+.Inventory > .loadSampleFishesButton:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.Inventory> .user_logout{background:red;color:white;border:none;border-radius:5px;margin:0px 0px 3px 3px;font-family: monospace;
+}
+.order {
+	border-radius: 10px;
+}
+.order > h2 {
+	width: 80px;
+	margin: auto;
+	font-family: cursive;
+}
+.order > .order_items {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	list-style: none;
+}
+.order > .order_items > li {
+	border-bottom: 1px solid;
+	padding: 10px 0px;
+	font-family: monospace;
+	color: grey;
+}
+
+
+.order > .total > strong {
+	font-family: cursive;
+}
+.order .removeFromOrder{
+	border:none;
+	font-size:20px;
+	background:white;
+	text-align: right;
+    display: none
+}
+.order> .order_items>li:hover .removeFromOrder{
+   display:inline-block;
+   color:red;
+   cursor:pointer;
+   outline: none;
+}
+input:focus {
+	outline: none;
+}
+button {
+	transition: background-color 0.5s linear;
+}
+button:hover {
+	background: green;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+.login>h2,.login>em,.login>button{display: block;margin:auto;margin:5px;}
+.login>button{padding:15px;margin-bottom: 5px;width:70%;border:none;color:white;margin:5px auto;border-radius: 2px}
+.login>button:hover{opacity:0.7;}
+.login>.github{background:lightgreen;color:white;}.login>.yahoo{background:blue;}.login>.facebook{background:midnightblue;}
+@media only screen and (max-width:400px){
+	.Inventory{order:1;}
+	.order{order:3;}
+	.menu{order:2;}
+}

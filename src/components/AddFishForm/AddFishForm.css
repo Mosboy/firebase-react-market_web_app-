@@ -1,0 +1,23 @@
+.fish-edit{
+	border:1px solid black;
+	display:flex;
+    flex-wrap:wrap;
+}
+.fish-edit>*{
+	height: 25px;
+  align-self: center;
+  flex-grow:1;
+}
+
+.fish-edit>button,.fish-edit>input[name="image"],.fish-edit>textarea[name="desc"]{
+	flex-basis:100%;
+}
+.fish-edit>*:hover{
+	background-color:rgba(255,255,0,0.5);
+}
+.fish-edit>button:hover{
+  background:black;
+  color:white;
+  border:none;
+  border-radius:0px;
+}
